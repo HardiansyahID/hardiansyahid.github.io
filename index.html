@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/872130df7e.js" crossorigin="anonymous"></script>
+    <title>Hardiansyah</title>
+</head>
+
+<body>
+    <nav class="bg-gray-900 w-screen fixed z-40">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                aria-current="page"><i data-feather="circle"></i> Home</a>
+
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                    <button type="button" id="hamburgerbtn"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="pr-4 block lg:hidden h-8 w-auto" src="img/icon.png" alt="Workflow">
+                        <img class="pr-4 hidden lg:block h-8 w-auto" src="img/icon.png" alt="Hardiansyah">
+                        <p class="mt-2 block lg:hidden h-8 w-auto font-judul text-xl text-white">Hardiansyah</p>
+                        <p class="mt-2 hidden lg:block h-8 w-auto font-judul text-xl text-white">Hardiansyah</p>
+                    </div>
+
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#home" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                aria-current="page">Home</a>
+
+                            <a href="#about"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+
+                            <a href="#experience"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+
+                            <a href="#contact"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden hidden" id="mobile-menu" data-aos="fade-down">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#home" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                    aria-current="page">Home</a>
+
+                <a href="#about"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+
+                <a href="#experience"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Experience</a>
+
+                <a href="#contact"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="home">
+        <div class="flex h-screen bg-gray-800" data-aos="fade-up">
+
+            <div class="self-center mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 p-8">
+                    <div class="flex col-span-4 p-4">
+                        <div class="self-center mx-auto p-8">
+                            <img src="img/hardi.png" alt="Hardiansyah" height="64px" width="auto">
+                        </div>
+                    </div>
+                    <div class="flex col-span-8 p-4">
+                        <div class="self-center mx-auto text-white font-des">
+                            <div class="mb-8">
+                                Hallo saya <b>Hardiansyah</b>, saya alumni <b>Universitas Teknokrat Indonesia</b> tahun
+                                2020 jurusan <b>S1 Sistem Informasi</b>. Saya orang yang disiplin, mampu bekerja dalam
+                                tekanan, tim maupun individu dan siap belajar hal baru. Saya seorang full stack web
+                                developer, saya dapat menggunakan <b>LAMP</b> stack dengan teknologi, library dan
+                                framework populer lainnya dalam mengembangkan sebuah aplikasi. mari berkenalan lebih
+                                lanjut dengan saya
+                            </div>
+                            <div>
+                                <a href="#about"
+                                    class="bg-gradient-to-br from-green-400 to-blue-400 hover:from-green-700 to-blue-700 text-white px-8 py-4 rounded-full text-base font-medium">Tentang
+                                    Saya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg class="bg-dark-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#1f2937" fill-opacity="1"
+            d="M0,160L34.3,138.7C68.6,117,137,75,206,58.7C274.3,43,343,53,411,80C480,107,549,149,617,165.3C685.7,181,754,171,823,192C891.4,213,960,267,1029,293.3C1097.1,320,1166,320,1234,309.3C1302.9,299,1371,277,1406,266.7L1440,256L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+        </path>
+    </svg>
+
+    <div id="about">
+        <div class="flex" data-aos="fade-up">
+            <div class="self-center mx-auto">
+
+                <div class="grid grid-rows-2 md:grid-rows-2">
+                    <div class="flex self-center mx-auto text-gray-900">
+                        <div class="flex grid grid-rows-12 md:grid-rows-2 text-center p-4">
+                            <div class="text-2xl font-judul row-span-1 self-center">
+                                Tentang Saya
+                            </div>
+
+                            <div class="font-des p-12 row-span-11">
+                                Saya lahir di Purworejo, 7 Juni 1996 saya tinggal di Jalan Kapten Suratno Purworejo Kec.
+                                Negeri Katon Kab. Pesawaran <br>
+                                Tinggi badan 165 CM Berat Badan 52 KG
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-12 p-12">
+                        <div class="flex col-span-4 bg-gray-800">
+                            <div class="self-center mx-auto p-8">
+                                <img src="img/hardi.png" alt="Hardiansyah" height="64px" width="auto">
+                            </div>
+                        </div>
+                        <div class="flex col-span-8 bg-gray-700">
+                            <div class="self-center mx-auto p-8 text-white font-des">
+                                About
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="experience">
+        <div class="flex h-screen" data-aos="fade-up">
+            <div class="self-center mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 p-12">
+                    <div class="flex col-span-4 bg-gray-800">
+                        <div class="self-center mx-auto p-8">
+                            <img src="img/hardi.png" alt="Hardiansyah" height="64px" width="auto">
+                        </div>
+                    </div>
+                    <div class="flex col-span-8 bg-gray-700">
+                        <div class="self-center mx-auto p-8 text-white font-des">
+                            pengalaman
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="flex h-screen" data-aos="fade-up">
+            <div class="self-center mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 p-12">
+                    <div class="flex col-span-4 bg-gray-800">
+                        <div class="self-center mx-auto p-8">
+                            <img src="img/hardi.png" alt="Hardiansyah" height="64px" width="auto">
+                        </div>
+                    </div>
+                    <div class="flex col-span-8 bg-gray-700">
+                        <div class="self-center mx-auto p-8 text-white font-des">
+                            Contact
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex">
+
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#273036" fill-opacity="1"
+                d="M0,128L26.7,138.7C53.3,149,107,171,160,154.7C213.3,139,267,85,320,58.7C373.3,32,427,32,480,53.3C533.3,75,587,117,640,117.3C693.3,117,747,75,800,90.7C853.3,107,907,181,960,202.7C1013.3,224,1067,192,1120,165.3C1173.3,139,1227,117,1280,122.7C1333.3,128,1387,160,1413,176L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> -->
+    <script>
+        feather.replace()
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <style>
+        .active {
+            display: block;
+        }
+    </style>
+
+    <script>
+        let hamburger = document.getElementById('hamburgerbtn');
+
+        let mobileMenu = document.getElementById('mobile-menu');
+
+        hamburger.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

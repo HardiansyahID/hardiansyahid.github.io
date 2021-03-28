@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Sen&display=swap');
+
+.font-des{
+    font-family: 'Sen', sans-serif !important;
+}
+.font-judul{
+    font-family: 'Hammersmith One', sans-serif !important;
+}
+
+.btn-radius-1{
+    border-radius: 10px !important;
+}
+.btn-radius-2{
+    border-radius: 20px !important;
+}
+.btn-radius-3{
+    border-radius: 30px !important;
+}
+.btn-radius-4{
+    border-radius: 50px !important;
+}
+.btn-radius-5{
+    border-radius: 100px !important;
+}
+
+
+.btn-padding-1{
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+}
+.btn-padding-2{
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+}
+.btn-padding-3{
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+}
+.btn-padding-4{
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+}
+.btn-padding-5{
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
